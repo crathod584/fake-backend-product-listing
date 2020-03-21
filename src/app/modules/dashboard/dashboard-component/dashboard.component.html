@@ -1,0 +1,36 @@
+<div class="container-fluid">
+  <div>
+    <div class="row">
+       <div class="col-md-6">
+          <button class="btn btn-info" style="cursor: pointer;" (click)="openModal(newProduct)">Add New Product</button>
+          <button class="btn btn-danger" style="cursor: pointer;" (click)="logout()">{{ 'LOGOUT' | translate}}</button>
+       </div>
+          <h2 class="text-center">{{ 'PRODUCT_LIST' | translate}}</h2>
+    </div>
+    <div class="col-md-3">
+    
+      <form [formGroup]="searchFrom">
+       <input type="text" class="form-control" formControlName="search" placeholder="Search">
+      </form>
+    </div>
+    <table class="table table-bordered">
+       <thead>
+        <tr class="thead-light">
+          <th scope="col" class="align-middle">{{ 'PRODUCT_NAME' | translate}}</th>
+          <th scope="col" class="align-middle">{{ 'PRODUCT_PRICE' | translate}}</th>
+
+        </tr>
+       </thead> 
+      <tbody>
+        <tr *ngFor="let product of productData">
+          <td class="align-middle">{{product.productName}}</td>
+          <td class="align-middle">{{product.productPrice}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<ng-template #newProduct>
+ <app-new-product-modal (getData)="getData()" [modalRef]="modalRef" ></app-new-product-modal>
+</ng-template>

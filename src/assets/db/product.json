@@ -1,0 +1,44 @@
+[
+  {
+  	"productId":"1",
+  	"productName":"Redmi Note 1",
+  	"productPrice":"150006",
+    "productSKU":"12"
+  },
+  {
+  	"productId":"2",
+  	"productName":"Redmi Note 2",
+  	"productPrice":"150005",
+    "productSKU":"123"
+  },
+  {
+  	"productId":"3",
+  	"productName":"Redmi Note 3",
+  	"productPrice":"150004",
+    "productSKU":"1234"
+  },
+  {
+  	"productId":"4",
+  	"productName":"Redmi Note 4",
+  	"productPrice":"150003",
+    "productSKU":"12345"
+  },
+  {
+  	"productId":"5",
+  	"productName":"Redmi Note 5",
+  	"productPrice":"15000",
+    "productSKU":"123456"
+  },
+  {
+  	"productId":"6",
+  	"productName":"Redmi Note 6",
+  	"productPrice":"150002",
+    "productSKU":"123457"
+  },
+  {
+  	"productId":"7",
+  	"productName":"Redmi Note 7",
+  	"productPrice":"150001",
+    "productSKU":"123458"
+  }
+]

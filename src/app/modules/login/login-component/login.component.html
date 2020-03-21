@@ -1,0 +1,28 @@
+<div class="container mt-5">
+    <div class="d-flex d-md-flex d-lg-flex d-sm-flex justify-content-sm-center justify-content-md-center justify-content-lg-center justify-content-center" >
+
+     <form #ngForm="ngForm" [formGroup]="loginForm" name="loginForm" (ngSubmit)="login()" autocomplete="off">
+  <div class="form-group" [ngClass]="{'fieldInvaild':ngForm.submitted && f.username.errors}">
+    <label >Username</label>
+    <input type="text" class="form-control" formControlName="username" placeholder="Enter username">
+    <small class="form-text text-muted" *ngIf="ngForm.submitted && f.username.errors">username Invalid</small>
+  </div>
+  <div class="form-group" [ngClass]="{'fieldInvaild':ngForm.submitted && f.password.errors}">
+    <label >Password</label>
+    <input type="password" class="form-control" placeholder="Password" formControlName="password">
+    <small *ngIf="ngForm.submitted && f.password.errors" class="form-text text-muted">Password is required</small>
+
+  </div>
+  <button [disabled]="loginButtonDisable" class="btn btn-primary">Sign In</button>
+</form>
+
+    </div>
+</div>
+
+
+
+
+
+
+
+
